@@ -1,0 +1,15 @@
+<h2>{{person.firstName + " " + person.lastName | uppercase}} Details</h2>
+<div>
+	<p><span>Id: </span>{{person.id}}</p>
+	<p><span>First name: </span>{{person.firstName}}</p>
+	<p><span>Last name: </span>{{person.lastName}}</p>
+	<p><span>Age: </span>{{person.age}}</p>
+	<p><span>Salary: </span>{{person.salary}}</p>
+</div>
+
+<h2>Persons: </h2>
+<ul class="persons">
+   <li *ngFor="let person of persons">
+      <span class="badge">{{person.id}} </span> {{person.firstName}} {{person.lastName}}	   
+   </li>	   
+</ul>
